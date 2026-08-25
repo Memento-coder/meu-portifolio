@@ -1,31 +1,250 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
+
+    <!--
+        Configuração para tornar o site responsivo em celulares,
+        tablets e computadores.
+    -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio Leonardo</title>
+
+    <meta name="description"
+        content="Portfólio profissional de Leonardo - Tecnologia da Informação e Cibersegurança">
+
+    <title>Leonardo | Tecnologia & Cibersegurança</title>
+
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="sobre.html">Sobre mim</a></li>
-                <li><a href="formacao.html">Formação</a></li>
-                <li><a href="portfolio.html">Portfólio</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
-        </nav>
+
+    <!-- Cabeçalho e menu principal -->
+    <header class="header">
+
+        <div class="container nav-container">
+
+            <a href="index.html" class="logo">
+                <span>&lt;</span>Leonardo<span>/&gt;</span>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+                ☰
+            </button>
+
+            <nav class="nav" id="mainNav">
+                <a href="index.html" class="active">Início</a>
+                <a href="sobre.html">Sobre mim</a>
+                <a href="formacao.html">Formação</a>
+                <a href="portfolio.html">Portfólio</a>
+                <a href="contato.html">Contato</a>
+                <button id="themeToggle" class="theme-button" title="Alternar tema">
+                    ☀
+                </button>
+            </nav>
+
+        </div>
+
     </header>
 
     <main>
-        <h1>Bem-vindo ao meu portfólio!</h1>
-        <p>Sou Leonardo, pós-graduado em Cibersegurança. Aqui você encontra minha formação, projetos e formas de contato.</p>
+
+        <!-- Hero principal -->
+        <section class="hero">
+
+            <div class="container hero-content">
+
+                <div class="hero-text">
+
+                    <p class="terminal-text">
+                        <span>$</span> whoami
+                    </p>
+
+                    <h1>
+                        Leonardo Felipe
+                    </h1>
+
+                    <h2>
+                        Tecnologia da Informação
+                        <span class="highlight">&</span>
+                        Cibersegurança
+                    </h2>
+
+                    <p class="hero-description">
+                        Profissional de Tecnologia da Informação com experiência
+                        em suporte, infraestrutura, administração de ambientes
+                        Microsoft e interesse contínuo em segurança da informação.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="portfolio.html" class="btn btn-primary">
+                            Ver projetos
+                        </a>
+
+                        <a href="contato.html" class="btn btn-secondary">
+                            Entre em contato
+                        </a>
+                    </div>
+
+                </div>
+
+                <!-- Elemento visual inspirado em terminal -->
+                <div class="terminal-card">
+
+                    <div class="terminal-header">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <div class="terminal-body">
+
+                        <p>
+                            <span class="code-green">user</span>@portfolio:
+                            <span class="code-blue">~</span>$
+                        </p>
+
+                        <p>cat perfil.txt</p>
+
+                        <br>
+
+                        <p>
+                            Área: <span class="code-blue">TI</span>
+                        </p>
+
+                        <p>
+                            Foco: <span class="code-blue">Cybersecurity</span>
+                        </p>
+
+                        <p>
+                            Metodologia:
+                            <span class="code-green">SSDLС</span>
+                        </p>
+
+                        <p>
+                            Status:
+                            <span class="code-green">online</span>
+                        </p>
+
+                        <p class="cursor">
+                            █
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Resumo profissional -->
+        <section class="section">
+
+            <div class="container">
+
+                <div class="section-title">
+                    <span>01.</span>
+                    <h2>O que faço</h2>
+                </div>
+
+                <div class="cards three-columns">
+
+                    <article class="info-card">
+                        <div class="card-icon">⌘</div>
+
+                        <h3>Infraestrutura</h3>
+
+                        <p>
+                            Administração e suporte de ambientes de Tecnologia
+                            da Informação, buscando disponibilidade,
+                            organização e continuidade dos serviços.
+                        </p>
+                    </article>
+
+                    <article class="info-card">
+                        <div class="card-icon">⌁</div>
+
+                        <h3>Cibersegurança</h3>
+
+                        <p>
+                            Estudos e projetos relacionados a SIEM,
+                            monitoramento, análise de eventos e proteção
+                            de ambientes corporativos.
+                        </p>
+                    </article>
+
+                    <article class="info-card">
+                        <div class="card-icon">⌘</div>
+
+                        <h3>Automação</h3>
+
+                        <p>
+                            Utilização de scripts e ferramentas para
+                            simplificar tarefas administrativas e aumentar
+                            a eficiência operacional.
+                        </p>
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Conceito de segurança -->
+        <section class="security-section">
+
+            <div class="container security-content">
+
+                <div>
+                    <span class="section-label">SECURITY BY DESIGN</span>
+
+                    <h2>
+                        Segurança desde o início
+                    </h2>
+
+                    <p>
+                        Este projeto também utiliza conceitos do
+                        <strong>Secure Software Development Life Cycle
+                        (SSDLС)</strong>, considerando validação de entradas,
+                        separação de responsabilidades, redução de
+                        dependências e preocupação com segurança durante
+                        o desenvolvimento.
+                    </p>
+                </div>
+
+                <div class="security-badge">
+                    <div class="shield">◆</div>
+                    <span>SSDLС</span>
+                    <small>Security by Design</small>
+                </div>
+
+            </div>
+
+        </section>
+
     </main>
 
-    <footer>
-        <p>&copy; 2026 - Leonardo</p>
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <p>
+                © 2026 Leonardo Felipe
+            </p>
+
+            <p>
+                Desenvolvido com HTML5, CSS3 e JavaScript.
+            </p>
+
+        </div>
+
     </footer>
+
     <script src="js/script.js"></script>
+
 </body>
+
 </html>
