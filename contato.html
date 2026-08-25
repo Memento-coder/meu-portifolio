@@ -1,1 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
 
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Entre em contato com Leonardo.">
+
+    <title>Contato | Leonardo</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div class="container nav-container">
+
+            <a href="index.html" class="logo">
+                <span>&lt;</span>Leonardo<span>/&gt;</span>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle">
+                ☰
+            </button>
+
+            <nav class="nav" id="mainNav">
+
+                <a href="index.html">Início</a>
+
+                <a href="sobre.html">Sobre mim</a>
+
+                <a href="formacao.html">Formação</a>
+
+                <a href="portfolio.html">Portfólio</a>
+
+                <a href="contato.html" class="active">
+                    Contato
+                </a>
+
+                <button id="themeToggle" class="theme-button">
+                    ☀
+                </button>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <section class="page-header">
+
+            <div class="container">
+
+                <span class="section-label">
+                    04 / CONTATO
+                </span>
+
+                <h1>
+                    Vamos conversar
+                </h1>
+
+                <p>
+                    Utilize o formulário abaixo para enviar uma mensagem.
+                </p>
+
+            </div>
+
+        </section>
+
+        <section class="section">
+
+            <div class="container contact-grid">
+
+                <div class="contact-info">
+
+                    <span class="section-label">
+                        CONTATO
+                    </span>
+
+                    <h2>
+                        Entre em contato
+                    </h2>
+
+                    <p>
+                        Este formulário utiliza JavaScript para validar
+                        os dados antes de realizar a simulação do envio.
+                    </p>
+
+                    <div class="contact-security">
+
+                        <div class="security-mini-icon">
+                            🔐
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Validação de entrada
+                            </h3>
+
+                            <p>
+                                Os dados são verificados no navegador antes
+                                da simulação do envio.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="contact-security">
+
+                        <div class="security-mini-icon">
+                            ✓
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Sem armazenamento
+                            </h3>
+
+                            <p>
+                                Este formulário é apenas demonstrativo e
+                                não armazena os dados enviados.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="contact-form-wrapper">
+
+                    <!--
+                        Formulário demonstrativo.
+                        O envio é interceptado pelo JavaScript para
+                        realizar validações e simular o envio.
+                    -->
+                    <form id="contatoForm" class="contact-form">
+
+                        <div class="form-group">
+
+                            <label for="nome">
+                                Nome
+                            </label>
+
+                            <input
+                                type="text"
+                                id="nome"
+                                name="nome"
+                                placeholder="Digite seu nome"
+                                maxlength="100"
+                                autocomplete="name"
+                                required
+                            >
+
+                            <small class="error-message" id="nomeError"></small>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="email">
+                                E-mail
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="seu@email.com"
+                                maxlength="150"
+                                autocomplete="email"
+                                required
+                            >
+
+                            <small class="error-message" id="emailError"></small>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="mensagem">
+                                Mensagem
+                            </label>
+
+                            <textarea
+                                id="mensagem"
+                                name="mensagem"
+                                rows="6"
+                                maxlength="1000"
+                                placeholder="Digite sua mensagem"
+                                required
+                            ></textarea>
+
+                            <small class="error-message" id="mensagemError"></small>
+
+                        </div>
+
+                        <button
+                            type="submit"
+                            class="btn btn-primary form-button"
+                        >
+                            Enviar mensagem
+                        </button>
+
+                        <div
+                            id="formSuccess"
+                            class="success-message"
+                            role="status"
+                            aria-live="polite"
+                        ></div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <p>
+                © 2026 Leonardo Felipe
+            </p>
+
+            <p>
+                Formulário demonstrativo
+            </p>
+
+        </div>
+
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
